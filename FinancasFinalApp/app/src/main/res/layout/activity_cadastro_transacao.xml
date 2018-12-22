@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.daniel.financasfinalapp.CadastroTransacao">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/descrição"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Local"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/forma"
+            android:layout_width="168dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textSize="15sp"
+            android:hint="Forma de Pagamento"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Valor"
+            android:inputType="numberSigned|numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </TableRow>
+
+    <EditText
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Data"
+        android:inputType="date" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="Add"
+                android:text="Adicionar" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="cancelar"
+                android:text="Cancelar" />
+        </TableRow>
+
+    </TableRow>
+
+
+</TableLayout>

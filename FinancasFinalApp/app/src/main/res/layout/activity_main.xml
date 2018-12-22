@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.daniel.financasfinalapp.MainActivity">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="date"
+            android:text=""
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnGravar"
+                android:drawableStart="@android:drawable/ic_input_add"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:onClick="adicionarTransacao"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:onClick="filtrarDados"
+                android:text="" />
+        </TableRow>
+
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#3fd43f"
+            android:padding="10dip">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Descriçao"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Local"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:width="90dp"
+                android:text="Forma de Pagamento"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:textStyle="bold"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Valor"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</TableLayout>
